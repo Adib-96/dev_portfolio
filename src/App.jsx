@@ -12,7 +12,6 @@ function App() {
       <section id='About'>About</section>
       <section id='My Skills'>My Skills</section>
       <section id='Work'>Work</section>
-      <section id='Blog'>Blog</section>
       <section id='Contact'>Contact</section>
     </div>
   )

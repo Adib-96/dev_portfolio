@@ -19,13 +19,16 @@ const textVariants = {
 const sliderVariants = {
   initial :{
     x:0,
+    zIndex:-10
+
   },
   animate : {
-    x:"-220%",
+    x:"-1300%",
     transition : {
+      zIndex:-10,
       repeat:Infinity,
       repeatType:"mirror",
-      duration:10,
+      duration:40,
     },
   },
 };
@@ -35,7 +38,7 @@ function Hero() {
   return (
     <motion.div className="hero" >
       <motion.div className="wrapper" >
-        <motion.div className="textContainer" variants={textVariants} initial="initial" animate="animate">
+        <motion.div className="textContainer" variants={textVariants} initial="initial" animate="animate" >
           <motion.h2 variants={textVariants}>Adib Ben Haddada</motion.h2 >
           <motion.h1 variants={textVariants}>Full-stack developer.</motion.h1>
           <motion.div className="buttons" variants={textVariants}>
@@ -45,7 +48,7 @@ function Hero() {
         </motion.div>
       </motion.div>
       <motion.div className="slider" variants={sliderVariants} initial="initial" animate="animate">
-        Full-stack developer, Coding
+      Passionate reliable, forward-thinking.
       </motion.div>
       {/* <div className="imageContainer">
         <img src="/fullstack.png" alt=""/>
